@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: Outfit, Arial;
+    background-color: var(--LightGray);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+p {
+    font-size: 15px;
+    color: var(--GrayishBlue);
+    font-weight: 400;
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    background-size: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container div {
+    margin-bottom: 11px;
+}
+
+.text {
+    padding: 5px 12px;
+}
+
+.text p {
+    margin-bottom: 5px;
+}
+
+.text :first-child {
+    color: var(--DarkBlue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375) {}
